@@ -13,7 +13,9 @@ name_on_order = st.text_input("Name on Smoothie:")
 st.write("The name on your Smoothie will be:", name_on_order)
 
 from snowflake.snowpark.functions import col
-# session = get_active_session()
+session = get_active_session()
+cnx = st.connection("snowflake")
+session = cnx.session()
 my_dataframe = session.table("SMOOTHIES.PUBLIC.FRUIT_OPTIONS").select(col('FRUIT_NAME'))
 st.dataframe(data=my_dataframe, use_container_width=True)
 
@@ -40,6 +42,4 @@ if ingredients_list:
 
     st.write(my_insert_stmt)
     st.stop()
-    cnx = st.connection("snowflake")
-    session = cnx.session()
 
