@@ -1,10 +1,7 @@
 name: app_environment
 channels:
-  snowflake
+  - snowflake
 dependencies:
-  python=3.8.*
-  snowflake-snowpark-python=streamlit
-
-import requests
-fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
-st.text(fruityvice_response)
+  - python=3.8.*
+  - snowflake-snowpark-python=
+  - streamlit=
