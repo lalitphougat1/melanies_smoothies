@@ -16,7 +16,7 @@ st.write("The name on your Smoothie will be:", name_on_order)
 
 # from snowflake.snowpark.functions import col
 #def get_active_session():
-set session = get_active_session()
+session = get_active_session()
 my_dataframe = session.table("SMOOTHIES.PUBLIC.FRUIT_OPTIONS").select(col('FRUIT_NAME'))
 st.dataframe(data=my_dataframe, use_container_width=True)
 
