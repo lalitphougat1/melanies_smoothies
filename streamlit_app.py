@@ -2,8 +2,8 @@
 import streamlit as st
 # from snowflake.snowpark.context import get_active_session
 #import get_active_session
-from snowflake.snowpark import session
-from snowflake.snowpark import table
+from snowflake.snowpark import session.table
+
 # from snowflake.snowpark.functions import col
 
 # Write directly to the app
