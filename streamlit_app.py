@@ -1,12 +1,8 @@
 # Import python packages
 import streamlit as st
-import snowflake.snowpark as snowpark
-from snowflake.snowpark.functions import col
-from snowflake.snowpark.dataframe_reader import *
-from snowflake.snowpark.functions import *
 # from snowflake.snowpark.context import get_active_session
 #import get_active_session
-# from snowflake.snowpark import session
+from snowflake.snowpark import *
 
 # from snowflake.snowpark.functions import col
 
