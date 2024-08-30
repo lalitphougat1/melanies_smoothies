@@ -48,7 +48,7 @@ if ingredients_list:
     st.write(my_insert_stmt)
     st.stop()
 import requests
-if ingredient_list:
+if ingredients_list:
 	ingredients_string = ''
 	for fruit_chosen in ingredients_list:
 		ingredients_string += fruit_chosen +''
