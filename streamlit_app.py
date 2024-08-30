@@ -1,8 +1,10 @@
 # Import python packages
 import streamlit as st
+cnx = st.connection("snowflake")
+session = cnx.session()
 # from snowflake.snowpark.context import get_active_session
 #import get_active_session
-from snowflake.snowpark import *
+#from snowflake.snowpark import *
 
 # from snowflake.snowpark.functions import col
 
@@ -48,6 +50,3 @@ if ingredients_list:
     ##if ingredients_string:
      #   session.sql(my_insert_stmt).collect()
       #  st.success('Your Smoothie is ordered!', icon="✅")
-
-cnx = st.connection("snowflake")
-session = cnx.session()
